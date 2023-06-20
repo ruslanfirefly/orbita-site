@@ -1,0 +1,232 @@
+baseURL = 'http://example.org/'
+languageCode = 'ru'
+metaDataFormat = "yaml"
+title = 'СНТ "Орбита"'
+theme = "blist"
+
+
+DefaultContentLanguage = "ru"
+DefaultContentLanguageInSubdir = true
+[languages]
+[languages.ru]
+contentDir = "content/ru" #English
+weight = 1
+languageName = "Русский"
+[languages.ru.params]
+introTitle = 'СНТ "Орбита"'
+introSubtitle = "Ленинградская область, Ломоносовский район, Виллозское городское поселение."
+introPhoto = "/picture.jpg"
+logo = "/blist-logo.png"
+[[languages.ru.menu.main]]
+name = "Новости"
+url = "news"
+weight = 1
+
+[[languages.ru.menu.main]]
+name = "Контакты"
+url = "contacts"
+weight = 2
+
+[[languages.ru.menu.main]]
+name = "Темы"
+url = "tags"
+weight = 3
+
+
+[params]
+# Enable the darkmode toggle in header
+darkModeToggle = true
+
+# Enable search in header
+enableSearch = true
+
+# Option to customize the search parameters of a page
+# Below are the supported options; Note that including entire content
+# may slowdown the loading of search results
+# Title of page is included by default
+searchKeys = [
+  "tags",
+  "date",
+  "categories",
+  "summary",
+  "content",
+  "link",
+  "author",
+]
+
+# Custom copyright - optional
+copyright = 'Все права защищены © 2023 - СНТ "Орбита" · '
+favicon = "/favicon.svg"
+
+# Color for the intro details and social links block, not applicable for dark mode
+# Supported values: Any color from TailwindCSS default colors
+# Reference: https://tailwindcss.com/docs/customizing-colors
+ascentColor = "bg-blue-100"
+
+# The page bundle that is shown on the front page
+frontBundle = "news"
+
+# Used to hide the post metadata such as posted date, reading time and word count
+# Can be used at site level or page level
+hideMeta = false
+
+# To hide "Other languages" option if the post is available in multiple languages
+# Can be used at site level or page level
+hideOtherLanguages = false
+
+# Add support for Table of contents
+# Can be added to a page level also in markdown frontmatter
+toc = false
+
+# Hides the thumbnail in post view
+# Thumbnails in home and blog pages will still be shown
+# This setting can also be in page's markdown file
+hidePageThumbnail = false
+
+# Comments system
+[params.comments]
+# Supports disqus, giscus and utterances
+# Check hugo docs for setting up disqus
+system = "giscus"
+
+# Options for giscus, exclude hyphens
+repo = ""
+repoid = ""
+category = ""
+categoryid = ""
+mapping = ""
+strict = ""
+reactionsenabled = ""
+emitmetadata = ""
+inputposition = ""
+theme = ""
+
+# Options for utterances, exclude hyphens
+# repo = ""
+# issueterm = ""
+# theme = ""
+
+[params.homepage.social]
+# Global params common for both languages
+title = "Наши социальные сети"
+description = "За более оперативной информацией и просто общением"
+
+# [[params.homepage.social.icons]]
+# website = "twitter"
+# url = "https://twitter.com/"
+# [[params.homepage.social.icons]]
+# website = "linkedin"
+# url = "https://linkedin.com/in/"
+# [[params.homepage.social.icons]]
+# website = "xing"
+# url = "https://www.xing.com/profile/"
+[[params.homepage.social.icons]]
+website = "telegram"
+url = "https://t.me/"
+[[params.homepage.social.icons]]
+website = "github"
+url = "https://github.com/"
+# [[params.homepage.social.icons]]
+# website = "buymeacoffee"
+# url = "https://www.buymeacoffee.com/"
+# [[params.homepage.social.icons]]
+# website = "medium"
+# url = "https://medium.com/"
+# [[params.homepage.social.icons]]
+# website = "reddit"
+# url = "https://reddit.com/"
+# [[params.homepage.social.icons]]
+# website = "dribbble"
+# url = "https://dribbble.com/"
+# [[params.homepage.social.icons]]
+# website = "stackoverflow"
+# url = "https://stackoverflow.com/"
+# [[params.homepage.social.icons]]
+# website = "xda"
+# url = "https://forum.xda-developers.com/"
+# [[params.homepage.social.icons]]
+# website = "tiktok"
+# url = "https://tiktok.com"
+# [[params.homepage.social.icons]]
+# website = "googlescholar"
+# url = "https://scholar.google.com/"
+# [[params.homepage.social.icons]]
+# website = "mastodon"
+# url = "https://joinmastodon.org"
+# [[params.homepage.social.icons]]
+# website = "youtube"
+# url = "https://youtube.com"
+# [[params.homepage.social.icons]]
+# website = "instagram"
+# url = "https://instagram.com"
+[[params.homepage.social.icons]]
+website = "facebook"
+url = "https://vk.com"
+# [[params.homepage.social.icons]]
+# website = "behance"
+# url = "https://behance.net"
+
+[[menu.main]]
+name = "About"
+url = "/about"
+
+[build]
+writeStats = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+[markup.highlight]
+style = "dracula"
+[markup.goldmark.renderer]
+# Enable to include inline HTML
+unsafe = true
+
+
+months_rod = [
+  "",
+  "января",
+  "февраля",
+  "марта",
+  "апреля",
+  "мая",
+  "июня",
+  "июля",
+  "августа",
+  "сентября",
+  "октября",
+  "ноября",
+  "декабря",
+]
+months_camel = [
+  "",
+  "Январь",
+  "Февраль",
+  "Март",
+  "Апрель",
+  "Май",
+  "Июнь",
+  "Июль",
+  "Август",
+  "Сентябрь",
+  "Октябрь",
+  "Ноябрь",
+  "Декабрь",
+]
+months_small = [
+  "",
+  "январь",
+  "февраль",
+  "март",
+  "апрель",
+  "май",
+  "июнь",
+  "июль",
+  "август",
+  "сентябрь",
+  "октябрь",
+  "ноябрь",
+  "декабрь",
+]
