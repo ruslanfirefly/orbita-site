@@ -1,4 +1,4 @@
-baseURL = 'https://cntorbita.ru/'
+baseURL = 'https://cntorbita.online/'
 languageCode = 'ru'
 metaDataFormat = "yaml"
 title = 'СНТ "Орбита"'
