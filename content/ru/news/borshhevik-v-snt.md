@@ -1,9 +1,9 @@
 ---
-author: ""
+author: "СНТ Орбита"
 title: "Markdown Syntax Guide"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags: ["новости", ""]
-date: 2023-07-15
+tags: ["новости"]
+date: 2023-06-15
 thumbnail: "https://static.boredpanda.com/blog/wp-content/uploads/2014/01/animal-children-photography-elena-shumilova-2.jpg"
 ---
 
