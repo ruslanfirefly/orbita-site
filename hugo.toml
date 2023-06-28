@@ -19,17 +19,17 @@ introPhoto = "/logos/intrologo.jpg"
 logo = "/logos/orbit-logo.png"
 [[languages.ru.menu.main]]
 name = "Новости"
-url = "news"
+url = "news/"
 weight = 1
 
 [[languages.ru.menu.main]]
 name = "Контакты"
-url = "contacts"
+url = "contacts/"
 weight = 2
 
 [[languages.ru.menu.main]]
 name = "Темы"
-url = "tags"
+url = "tags/"
 weight = 3
 
 
